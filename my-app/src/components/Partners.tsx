@@ -1,8 +1,6 @@
 import React from 'react'
 
 export const Partners = ({partners}:{partners:any[]}) => {
-
-    console.log('partners length:::', partners.length)
     if (partners.length === 0) return null
 
     const PartnerRow = (partner:any,index:any) => {
