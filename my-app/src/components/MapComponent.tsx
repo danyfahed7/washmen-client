@@ -3,7 +3,6 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup, Circle, LayerGroup, LayersControl } from 'react-leaflet'
 
 import 'leaflet/dist/leaflet.css';
-import customIcon from "./images/central-marker.png";
 import customIcon2 from "./images/marker-icon-2x-red.png";
   
 const blueOptions = { color: 'blue', fillColor: 'blue' }
