@@ -5,6 +5,6 @@ RUN cd my-app && npm install && npm run build
 
 WORKDIR /usr/src/app/my-app
 
-EXPOSE 3000
+EXPOSE 3000 3080
 
 CMD ["npm", "start"]
