@@ -49,7 +49,13 @@ export const MapComponent =  (props: {range:any, root:any, partners: any}) => {
                 </LayerGroup>
                 </LayerGroup>
                 </LayersControl.Overlay>
-               
+                {props.partners.map((esLintThing = {}, index:any) => (
+                <Marker position={[props.partners[index].lat, props.partners[index].lng]} key={index}>
+                    <Popup>
+                    {[props.partners[index].organization]}
+                    </Popup>
+                </Marker>
+                ))}
             </LayersControl>
         </MapContainer>
     )
