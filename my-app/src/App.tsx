@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 
-
-import { MapContainer, TileLayer, Marker, Popup, LayersControl } from 'react-leaflet'
-
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import 'leaflet/dist/leaflet.css';
-// @import url('https://unpkg.com/leaflet@1.5.1/dist/leaflet.css');
 
 import { Header } from './components/Header'
 import { RangeFilter } from './components/RangeFilter'
@@ -16,7 +11,7 @@ import { fetchPartners } from './services/PartnerService';
 import { Partners } from './components/Partners'
 import { MapComponent } from './components/MapComponent'
 
-import L, { Circle, FeatureGroup, LayerGroup, Rectangle } from 'leaflet';
+import L from 'leaflet';
 
 class App extends Component {
   
