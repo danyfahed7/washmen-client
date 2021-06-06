@@ -30,7 +30,7 @@ jobs:
         npm ci
     - run: |
         cd my-app/
-        npm run build --if-present
+        npm run-script build --if-present
     - name: Login to Docker Hub
       run: docker login --username "${{ secrets.DOCKER_USERNAME }}" --password "${{ secrets.DOCKER_PWD }}"
     - name: Build the Docker Image

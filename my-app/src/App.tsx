@@ -34,12 +34,12 @@ class App extends Component {
   }
 
   displayMap = () => {
-      if(this.state.showMap == true){
-        this.state.showMap = false;
+      if(this.state.showMap === true){
+        // this.state.showMap = false;
         this.setState({showMap: false })
       } else {
         this.setState({showMap: true })        
-        this.state.showMap = true;
+        // this.state.showMap = true;
       }
   }
 
